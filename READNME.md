@@ -13,4 +13,6 @@ git commit -m "them ..."
 
 git push (quang code len)
 
+git branch -D ten_branch (xoa branch)
+
 
