@@ -15,4 +15,6 @@ git push (quang code len)
 
 git branch -D ten_branch (xoa branch)
 
+cls (clear cmd)
+
 
