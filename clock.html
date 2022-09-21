@@ -49,21 +49,29 @@
     </div>
 
     <script>
+        function format(object) {
+            object = object < 10 ? "0"+object : object
+            return object
+        }
+
         function Dong_ho() {
-            var month = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+            // var month = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
             var ngay = document.getElementById("ngay");
             var thang = document.getElementById("thang");
             var nam = document.getElementById("nam");
             var gio = document.getElementById("gio");
             var phut = document.getElementById("phut");
             var giay = document.getElementById("giay");
-    
-            var Ngay_hien_tai = new Date().getDate();
-            var Thang_hien_tai = month[new Date().getMonth()];
-            var Nam_hien_tai = new Date().getFullYear();
-            var Gio_hien_tai = new Date().getHours();
-            var Phut_hien_tai = new Date().getMinutes();
-            var Giay_hien_tai = new Date().getSeconds();
+            
+            var date = new Date()
+
+            var Ngay_hien_tai = date.getDate();
+            //var Thang_hien_tai = month[date.getMonth()];
+            var Thang_hien_tai = format(date.getMonth())
+            var Nam_hien_tai = date.getFullYear();
+            var Gio_hien_tai = date.getHours();
+            var Phut_hien_tai = date.getMinutes();
+            var Giay_hien_tai = date.getSeconds();
     
             ngay.innerHTML = "Ngày " + Ngay_hien_tai;
             thang.innerHTML = " tháng " + Thang_hien_tai;
@@ -74,7 +82,8 @@
         }
 
      
-        var Dem_gio = setInterval(Dong_ho, 1000);
+        //var Dem_gio = setInterval(Dong_ho, 1000);
+        setInterval(Dong_ho, 1000);
     </script>
 </body>
 </html>
