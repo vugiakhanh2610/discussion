@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        :root{
+            --colorBg: rgb(189, 182, 182);
+        }
+         .navbar-nav{
+            margin-right: 100px;
+        }
+
+        .list{
+            border: 0.1px solid rgb(218, 202, 202);
+        }
+
+        .list__item{
+            color: blue;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .list__item:hover{
+            background-color: var(--colorBg);
+            cursor: pointer;
+        }
+
+        .list__item:not(:last-child){
+            border-bottom: 0.1px solid rgb(218, 202, 202);
+        }
+
+        .main{
+            /* width: 100%; */
+            height: 350px;
+            color: grey;
+            font-size: 70px;
+            text-align: center;
+            background-color: var(--colorBg);
+        }
+
+        .main p{
+            padding-top: 100px;
+        }
+
+        .boxed{
+            /* margin-top: 30px;
+            margin-right: 0;
+            margin-left: 0; */
+            margin: 30px 0 0 0;
+            border: 0.1px solid rgb(218, 202, 202);
+            border-radius: 5px;
+        }
+
+        .boxed:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .boxed__top{
+            border-bottom: 0.1px solid rgb(218, 202, 202);
+            background-color: var(--colorBg);
+        }
+
+        .boxed__text{
+            padding-left: 10px;
+            border-bottom: 0.1px solid rgb(218, 202, 202);
+        }
+        
+        .boxed p{
+            color: grey;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .boxed__text h3{
+           color: blue;
+        }
+
+        .boxed__text p{
+            padding-top: 1px;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .boxed__item{
+            padding: 10px;
+            position: relative;
+        }
+
+        .boxed__item i:not(:last-child){
+            color: black;
+        }
+
+        .footer{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            font-size: 15px;
+            text-align: center;
+            background-color: rgb(51, 49, 49);
+            clear: both;
+            padding: 20px;
+        }
+
+        .footer p{
+            padding-top: 15px;
+        }
+
+    </style>
+
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+             <!-- column 1 -->
+             <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="sidebar">
+                    <h2><b>Shop Name</b></h2>
+                    <div class="list">
+                        <p class="list__item">Category 1</p>
+                        <p class="list__item">Category 2</p>
+                        <p class="list__item">Category 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column 2 -->
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <div class="main">
+                    <p class="main__text">900 x 350</p>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="row">
+
+        <!-- column 1 -->
+        <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+            <div class="boxed">
+                <div class="boxed__top">
+                    <p>700 x 400</p>
+                </div>
+                <div class="boxed__text">
+                    <h3><b>Item One</b></h3>
+                    <h4><b>$24.99</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae doloribus explicabo, facilis cum 
+                        tempora animi sint blanditiis libero modi 
+                         recusandae sunt eaque 
+                         rerum sed consequuntur.
+                    </p>
+                </div>
+                <div class="boxed__item">
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                </div>
+            </div>
+       </div>
+
+      <!-- column 2 -->
+       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="boxed">
+                <div class="boxed__top">
+                    <p>700 x 400</p>
+                </div>
+                <div class="boxed__text">
+                    <h3><b>Item One</b></h3>
+                    <h4><b>$24.99</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae doloribus explicabo, facilis cum 
+                        tempora animi sint blanditiis libero modi 
+                        recusandae sunt eaque 
+                        rerum sed consequuntur.
+                    </p>
+                </div>
+                <div class="boxed__item">
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- column 3 -->
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="boxed">
+                <div class="boxed__top">
+                    <p>700 x 400</p>
+                </div>
+                <div class="boxed__text">
+                    <h3><b>Item One</b></h3>
+                    <h4><b>$24.99</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae doloribus explicabo, facilis cum 
+                        tempora animi sint blanditiis libero modi 
+                        recusandae sunt eaque 
+                        rerum sed consequuntur.
+                    </p>
+                </div>
+                <div class="boxed__item">
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                </div>
+            </div>
+        </div>
+        </div> 
+
+        <!-- column 4-->
+        <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+            <div class="boxed">
+                <div class="boxed__top">
+                    <p>700 x 400</p>
+                </div>
+                <div class="boxed__text">
+                    <h3><b>Item One</b></h3>
+                    <h4><b>$24.99</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae doloribus explicabo, facilis cum 
+                        tempora animi sint blanditiis libero modi 
+                         recusandae sunt eaque 
+                         rerum sed consequuntur.
+                    </p>
+                </div>
+                <div class="boxed__item">
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                </div>
+            </div>
+       </div>
+    
+      <!-- column 5 -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="boxed">
+            <div class="boxed__top">
+                <p>700 x 400</p>
+            </div>
+            <div class="boxed__text">
+                <h3><b>Item One</b></h3>
+                <h4><b>$24.99</b></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vitae doloribus explicabo, facilis cum 
+                    tempora animi sint blanditiis libero modi 
+                     recusandae sunt eaque 
+                     rerum sed consequuntur.
+                </p>
+            </div>
+            <div class="boxed__item">
+                <i class="fa fa-star-o icon"></i>
+                <i class="fa fa-star-o icon"></i>
+                <i class="fa fa-star-o icon"></i>
+                <i class="fa fa-star-o icon"></i>
+                <i class="fa fa-star-o icon"></i>
+            </div>
+        </div>
+   </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="boxed">
+                <div class="boxed__top">
+                    <p>700 x 400</p>
+                </div>
+                <div class="boxed__text">
+                    <h3><b>Item One</b></h3>
+                    <h4><b>$24.99</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Vitae doloribus explicabo, facilis cum 
+                        tempora animi sint blanditiis libero modi 
+                        recusandae sunt eaque 
+                        rerum sed consequuntur.
+                    </p>
+                </div>
+                <div class="boxed__item">
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                    <i class="fa fa-star-o icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="footer">
+                <p>Copyright @ Your Website 2017</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
