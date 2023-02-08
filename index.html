@@ -6,46 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Input</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
-    .form{
-        position: relative;
-        margin-top: 10px;
-    }
-
-    .form-input{
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    height: 50%;
-    }
-
-    .form-label{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 20px;
-        user-select: none;
-        pointer-events: none;
-        top: 0;
-        padding: 10px;
-        display: inline-block;
-        background-color: white;
-    }
-
-    </style>
+    
 </head>
 <body>
   <form action="">
-  <div>da them chuc nang dang nhap</div>
-    <div class="form">
-         <input type="text" class="form-input"/>
-         <label for="name" class="form-label">Họ tên</label>
-    </div>
-    <div class="form">
-         <input type="text" class="form-input"/>
-         <label for="name" class="form-label">Họ tên</label>
-    </div>
-    <div></div>
+    <input type="radio" id="html" name="fav_language" value="Đen tối">
+    <label for="html">Đen tối</label><br>
+    <input type="radio" id="css" name="fav_language" value="Trong sáng">
+    <label for="css">Trong sáng</label><br>
+    <button>Submit</button>
   </form>
 </body>
 </html>
